@@ -201,7 +201,7 @@ h5 {
 .box-logo {
     display: block;
     height: 50px;
-    padding:10px;
+    padding:5px;
 }
 
 .box-primary-nav-trigger {
@@ -336,7 +336,7 @@ h5 {
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: .2em 0;
+    margin: .1em 0;
     text-transform: capitalize;
 }
 
