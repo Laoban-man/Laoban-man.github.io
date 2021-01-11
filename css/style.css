@@ -200,8 +200,8 @@ h5 {
 
 .box-logo {
     display: block;
-    height: 50px;
-    padding:5px;
+    height: auto;
+    padding:0px;
 }
 
 .box-primary-nav-trigger {
