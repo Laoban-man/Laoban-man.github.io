@@ -99,13 +99,13 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="input-contact">
-                            <input type="text" name="user_name">
+                            <input type="text" name="user_name" id="user_name">
                             <span>your name</span>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="input-contact">
-                            <input type="text" name="user_email">
+                            <input type="text" name="user_email" id="user_email">
                             <span>your email</span>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                     </div>
                     <div class="col-md-12">
                         <div class="textarea-contact">
-                            <textarea name="message"></textarea>
+                            <textarea name="message" id="message"></textarea>
                             <span>message</span>
                         </div>
                     </div>
@@ -126,9 +126,9 @@
                           function sendEmail(){
                               emailjs.init('user_0PjhgvnzyXbLB8zf4fPlZ');
                               var templateParams = {
-                                from_email: 'user_email',
-                                from_name: 'user_name',
-                                message_html: 'message'
+                                from_email: document.getElementById("user_email"),
+                                from_name: document.getElementById("user_name"),
+                                message: document.getElementById("message")
                               };
                               emailjs.send('service_q0tzz6o',"template_2zrtvmw", templateParams)
                                 .then(function(response) {
