@@ -124,11 +124,10 @@
                     <div class="col-md-12">
                         <button type= "button" onclick="sendEmail()" class="btn btn-box">Send</button>
                         <script type="text/javascript">
-                            function sendEMail(){
-                              function() {
+                            function sendEMail(){(function() {
                                 // https://dashboard.emailjs.com/admin/integration
                                 emailjs.init('user_0PjhgvnzyXbLB8zf4fPlZ');
-                            };
+                            })();
                             var templateParams = {
                               from_email: 'user_email',
                               from_name: 'user_name',
@@ -139,8 +138,7 @@
                                 console.log('SUCCESS!', response.status, response.text);
                               }, function(error) {
                                 console.log('FAILED...', error);
-                              });
-                            };
+                              })};
                           </script>
                     </div>
                 </div>
