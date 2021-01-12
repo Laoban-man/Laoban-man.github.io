@@ -126,9 +126,9 @@
                           function sendEmail(){
                               emailjs.init('user_0PjhgvnzyXbLB8zf4fPlZ');
                               var templateParams = {
-                                from_email: document.getElementById("user_email"),
-                                from_name: document.getElementById("user_name"),
-                                message: document.getElementById("message")
+                                from_email: document.getElementById("user_email").value,
+                                from_name: document.getElementById("user_name").value,
+                                message: document.getElementById("message").value
                               };
                               emailjs.send('service_q0tzz6o',"template_2zrtvmw", templateParams)
                                 .then(function(response) {
