@@ -8783,24 +8783,6 @@ jQuery.ajaxPrefilter( "json jsonp", function( s, originalSettings, jqXHR ) {
 	}
 });
 
-$('.btn-box').click(function() {
-  $.ajax({
-    type: 'POST',
-    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-    data: {
-      'key': 'j_pQZuLCFE3K2Fo4mgL6EQ',
-      'message': {
-        'from_email': $('.email').val(),
-        'to': [{
-            'email': "nicolasmichaelroux@gmail.com",
-            'type': 'to'
-          }
-        ],
-      }
-    }
-  })
-});
-
 
 // data: string of html
 // context (optional): If specified, the fragment will be created in this context, defaults to document
