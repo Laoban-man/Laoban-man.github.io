@@ -25,22 +25,18 @@
             // https://dashboard.emailjs.com/admin/integration
             emailjs.init('user_0PjhgvnzyXbLB8zf4fPlZ');
         })();
-    </script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                // generate a five digit number for the contact_number variable
-                this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
-                emailjs.sendForm('contact_service', 'contact_form', this)
-                    .then(function() {
-                        console.log('SUCCESS!');
-                    }, function(error) {
-                        console.log('FAILED...', error);
-                    });
-            });
-        }
+        var templateParams = {
+          from_email: 'user_email',
+          from_name: 'user_name',
+          message_html: 'message'
+        };
+        emailjs.send('service_q0tzz6o',"template_2zrtvmw", templateParams)
+          .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+          }, function(error) {
+            console.log('FAILED...', error);
+          });
+      </script>
     </script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
