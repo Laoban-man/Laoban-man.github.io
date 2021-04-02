@@ -114,7 +114,7 @@
 
         <div class="col-md-9">
             <p>This Kaggle challenge is designed to investigate how public data is used to benefit society. As research papers list their sources, it is possible to measure how and what this public data was used and whether it leads to societal improvements.</p>
-            <p>To do so, this project uses NLP on the 14 thousand training publications to determine vectors which point to different dataset titles.</p>
+            <p>To do so, this project uses NLP on the 14 thousand training publications to determine vectors which point to different dataset titles. Interestingly, creating a custom NER model based on pre-trained weights introduces the issue of catastrophic forgetting, whereby training on new, specific labels leads to increasingly poor results. To address this issue, the NER data is first extracted using the original pre-trained model and then modified to take into account the new labelled data.</p>
             <p><b> To see code and results, follow the link to my Github page.</b></p>
         </div>
 
@@ -122,6 +122,8 @@
             <ul class="cat-ul">
                 <li><i class="ion-ios-circle-filled"></i> Python</li>
                 <li><i class="ion-ios-circle-filled"></i> NLP</li>
+                <li><i class="ion-ios-circle-filled"></i> spaCy</li>
+                <li><i class="ion-ios-circle-filled"></i> flair</li>
             </ul>
             <div class="h-10"></div>
             <h4>Follow</h4>
