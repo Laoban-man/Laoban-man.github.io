@@ -401,11 +401,13 @@ h5 {
     display: table;
     height: 100vh;
     width: 100%;
+
 }
 
 .box-intro .table-cell {
     display: table-cell;
     vertical-align: middle;
+    table-layout: fixed;
 }
 
 .box-intro em {
@@ -505,11 +507,14 @@ b i:last-child {
 .box-headline {
     font-size: 130px;
     line-height: 1.0;
+    width:100vw
+
 }
 
 .box-words-wrapper {
     display: inline-block;
     position: relative;
+
 }
 
 .box-words-wrapper b {
@@ -1102,9 +1107,9 @@ textarea:focus {
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 800px) {
     .box-headline {
-        font-size: 100px;
+        font-size: 50px;
     }
     .box-intro h5 {
         font-size: 12px;
