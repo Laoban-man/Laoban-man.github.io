@@ -1152,3 +1152,34 @@ textarea:focus {
         line-height: 30px;
     }
 }
+
+.top-bar-minimal {
+    color: rgba(255, 255, 255);
+    padding: 50px 0 50px;
+    text-align: center;
+}
+
+.top-bar-minimal h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #999;
+    line-height: 50px;
+}
+
+.top-bar-minimal p {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #777;
+}
+
+.top-bar-minimal p a {
+    color: #777;
+}
+
+.top-bar-minimal p a:hover,
+.top-bar-minimal p a:focus {
+    color: #555;
+    text-decoration: none;
+}
