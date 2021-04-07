@@ -1155,7 +1155,10 @@ textarea:focus {
 
 .top-bar-minimal {
     color: rgba(255, 255, 255);
-    padding: 50px 0 50px;
+    padding: 50 0 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
     text-align: center;
 }
 
