@@ -674,6 +674,7 @@ b i:last-child {
 .portfolio .categories-grid .categories ul li {
     list-style: none;
     margin: 20px 0;
+    display:inline;
 }
 
 .portfolio .categories-grid .categories ul li a {
