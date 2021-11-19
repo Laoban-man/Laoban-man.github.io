@@ -38,6 +38,18 @@
 
     gtag('config', 'G-6SL0WEVNKP');
   </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HT69G2GEGX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-HT69G2GEGX');
+  </script>
 </head>
 
 <body>
@@ -117,7 +129,9 @@
 
     <div class="col-md-9">
       <p>This Kaggle challenge stems from the HuBMAP project designed to fully map the human body. This specific project aims to identify kidney glomerulus at a cellular level from microscope images of tissue samples.</p>
-      <p>Beyond the very interesting application of image instance segmentation to medical imagery, this project presents two challenges: extremely high resolution images which leads to single file sizes in 100s of MB, and a very low number of training samples - 8 only. More interestingly, the two challenges are both issues and solutions: an approach to this project is to tile the original high resolution images into a host of smaller images which can then annotated and augmented to increase the size of the training data. These images are then fed through a Mask RCNN network to train an instance segmentation model to detect full or partial glomerulus samples in images.</p>
+      <p>Beyond the very interesting application of image instance segmentation to medical imagery, this project presents two challenges: extremely high resolution images which leads to single file sizes in 100s of MB, and a very low number of
+        training samples - 8 only. More interestingly, the two challenges are both issues and solutions: an approach to this project is to tile the original high resolution images into a host of smaller images which can then annotated and augmented
+        to increase the size of the training data. These images are then fed through a Mask RCNN network to train an instance segmentation model to detect full or partial glomerulus samples in images.</p>
     </div>
 
     <div class="col-md-3">
