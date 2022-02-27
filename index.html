@@ -15,8 +15,18 @@
 
   <!-- main css -->
   <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//unpkg.com/@beyonk/gdpr-cookie-consent-banner/dist/style.css">
+  <script src="//unpkg.com/@beyonk/gdpr-cookie-consent-banner/dist/browser/bundle.min.js"></script>
+  <GdprBanner cookieName="foo" description="bar" on:analytics={initAnalytics} />
 
+  <script>
+    import '@beyonk/gdpr-cookie-consent-banner/dist/style.css' // optional, you can also define your own styles
+    import GdprBanner from '@beyonk/gdpr-cookie-consent-banner'
 
+    function initAnalytics () {
+      // do something with segment.io or google analytics etc
+    }
+  </script>
   <!-- modernizr -->
   <script src="js/modernizr.js"></script>
 
