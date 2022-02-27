@@ -71,7 +71,7 @@
     <nav>
       <ul class="box-primary-nav">
         <li class="box-label">Navigate</li>
-        <li><a href="index.html">Intro</a></li>
+        <li><a href="index.html">Intro</a> </li>
         <li><a href="about.html">About me</a></li>
         <li><a href="work.html">Work</a></li>
         <li><a href="portfolio.html">Portfolio</a><i class="ion-ios-circle-filled color"></i></li>
@@ -86,9 +86,8 @@
         <li><a href="https://coderbyte.com/profile/nicolasrx">CoderByte</a></li>
 
         <li class="box-label">Follow me</li>
-        <li class="box-social"><a href="https://github.com/Laoban-man"><i class="ion-social-github"></i></a></li>
+        <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
         <li class="box-social"><a href="https://www.linkedin.com/in/nicolas-m-a-roux"><i class="ion-social-linkedin"></i></a></li>
-
 
       </ul>
     </nav>
@@ -97,42 +96,43 @@
 
   <!-- top-bar -->
   <div class="top-bar">
-    <h1>Cell classification in leukemia</h1>
-    <p><a href="index.html">Home</a> / <a href="portfolio.html">Portfolio</a>/ Cell classification in leukemia</p>
+    <h1>AWS Cloud Deployment</h1>
+    <p><a href="index.html">Home</a> / <a href="portfolio.html">Portfolio</a> / AWS Cloud Deployment</p>
   </div>
   <!-- end top-bar -->
 
   <!-- main-container -->
   <div class="container main-container">
     <div class="col-md-12">
-      <img src="img/portfolio/aml.png" alt="" class="img-responsive" />
+      <img src="img/portfolio/aws.png" alt="" class="img-responsive" />
       <div class="h-30"></div>
     </div>
 
     <div class="col-md-12">
-      <h3 class="text-uppercase">Cell classification in leukemia</h3>
-      <h5>Image classification</h5>
+      <h3 class="text-uppercase">AWS Cloud Deployment</h3>
+      <h5>Deploying an ML model in the cloud</h5>
       <div class="h-30"></div>
     </div>
 
     <div class="col-md-9">
-      <p>Cell classification in leukemia remains a challenge today due to the similarities between healthy and sick cells. Human error is widespread and the task is time-consuming. </p>
-      <p>This project aims to develop a tool to help with cell classification using progressively more complex machine learning algorithms and then provides a tool to explore and deploy the solution.</p>
-      <p><b> To see code and results, follow the link to my Github page.</b></p>
+      <p>The step between training models and deploying them can be fraught with difficulties. Any innovating solution is not going to be deployed on a single computer but most
+        likely will have to be accessible from the Cloud. Several problems have to be addressed: accessibility, storage, computational resources.</p>
+      <p>This project proposes a simple architecture based on AWS: images are stored on an S3 server (publicly accessible in this instance), and python scripts are run on
+        EMR scalable cluster of nodes. While not the center of this project, images are read in as numpy arrays, features are then computed by passing them into a VGG16 neural network,
+        and finally dimensionality reduction brings up a manageable number of variables for visualisation purposes.
     </div>
 
     <div class="col-md-3">
       <ul class="cat-ul">
-        <li><i class="ion-ios-circle-filled"></i> Image classification</li>
-        <li><i class="ion-ios-circle-filled"></i> Neural networks</li>
-        <li><i class="ion-ios-circle-filled"></i> Python</li>
-        <li><i class="ion-ios-circle-filled"></i> Flask</li>
-        <li><i class="ion-ios-circle-filled"></i> Docker</li>
+        <li><i class="ion-ios-circle-filled"></i> Pyspark</li>
+        <li><i class="ion-ios-circle-filled"></i> AWS</li>
+        <li><i class="ion-ios-circle-filled"></i> S3</li>
+        <li><i class="ion-ios-circle-filled"></i> EMR</li>
       </ul>
       <div class="h-10"></div>
       <h4>Follow</h4>
       <ul class="social-ul">
-        <li class="box-social"><a href="https://github.com/Laoban-man"><i class="ion-social-github"></i></a></li>
+        <li class="box-social"><a href="https://github.com/Laoban-man/P8_model_cloud"><i class="ion-social-github"></i></a></li>
         <li class="box-social"><a href="https://www.linkedin.com/in/nicolas-m-a-roux"><i class="ion-social-linkedin"></i></a></li>
       </ul>
     </div>
