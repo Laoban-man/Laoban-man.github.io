@@ -15,18 +15,10 @@
 
   <!-- main css -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="//unpkg.com/@beyonk/gdpr-cookie-consent-banner/dist/style.css">
-  <script src="//unpkg.com/@beyonk/gdpr-cookie-consent-banner/dist/browser/bundle.min.js"></script>
-  <GdprBanner cookieName="foo" description="bar" on:analytics={initAnalytics} />
 
-  <script>
-    import '@beyonk/gdpr-cookie-consent-banner/dist/style.css' // optional, you can also define your own styles
-    import GdprBanner from '@beyonk/gdpr-cookie-consent-banner'
+  <link rel="stylesheet" href="https://unpkg.com/orejime@latest/dist/orejime.css" />
+  <script src="https://unpkg.com/orejime@latest/dist/orejime.js"></script>
 
-    function initAnalytics () {
-      // do something with segment.io or google analytics etc
-    }
-  </script>
   <!-- modernizr -->
   <script src="js/modernizr.js"></script>
 
@@ -38,8 +30,14 @@
     <![endif]-->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6SL0WEVNKP"></script>
-  <script>
+  <script
+   type="opt-in"
+   data-type="application/javascript"
+   data-name="google-tag-manager" async src="https://www.googletagmanager.com/gtag/js?id=G-6SL0WEVNKP"></script>
+  <script
+   type="opt-in"
+   data-type="application/javascript"
+   data-name="google-tag-manager-datalayer" >
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
